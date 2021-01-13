@@ -23,6 +23,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
           git remote add nginx https://github.com/nginx/nginx
+          git config pull.ff only
           git fetch -p --all
           git pull nginx --all
           git branch
