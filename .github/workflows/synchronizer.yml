@@ -23,8 +23,8 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
           git remote add nginx https://github.com/nginx/nginx
-          git fetch nginx -p --all
-          git pull nginx master --all
+          git fetch -p --all
+          git pull nginx --all
           git branch
           git push origin master
           git checkout headerless
